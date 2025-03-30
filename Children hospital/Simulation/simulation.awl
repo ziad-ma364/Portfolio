@@ -1,0 +1,376 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     I0.0
+=      M0.0
+Network 2 
+LDN    M0.0
+AN     M0.1
+=      M2.0
+Network 3 
+// BLOWER (1)
+LD     M2.0
+A      M0.2
+AN     I0.1
+=      M2.2
+Network 4 
+// BLOWER (2)
+LD     M2.0
+A      M0.3
+AN     I0.2
+=      M2.3
+Network 5 
+// Õ„√…
+LD     M2.0
+A      M0.4
+AN     I0.3
+=      M2.4
+Network 6 
+// ‘›«ÿ
+LD     M2.0
+A      M0.5
+AN     I0.4
+=      M2.5
+Network 7 
+// MBBR
+LD     M2.0
+A      M0.6
+AN     I0.5
+=      M2.6
+Network 8 
+// ‰«›Œ ÂÊ«¡ 1
+LD     M2.0
+A      M0.7
+AN     I0.6
+=      M2.7
+Network 9 
+// ‰«›Œ ÂÊ«¡ 2
+LD     M2.0
+A      M1.0
+AN     I0.7
+=      M3.0
+Network 10 
+LDN    M0.0
+A      M0.1
+=      M2.1
+Network 11 
+// T37
+LD     M2.1
+MOVW   VW0, VW2
+*I     +600, VW2
+Network 12 
+// T38
+LD     M2.1
+MOVW   VW4, VW6
+*I     +600, VW6
+Network 13 
+// T39
+LD     M2.1
+MOVW   VW8, VW10
+*I     +600, VW10
+Network 14 
+// T40
+LD     M2.1
+MOVW   VW12, VW14
+*I     +600, VW14
+Network 15 
+// T41
+LD     M2.1
+MOVW   VW16, VW18
+*I     +600, VW18
+Network 16 
+// T42
+LD     M2.1
+MOVW   VW20, VW22
+*I     +600, VW22
+Network 17 
+// T43
+LD     M2.1
+MOVW   VW24, VW26
+*I     +600, VW26
+Network 18 
+// T44
+LD     M2.1
+MOVW   VW28, VW30
+*I     +600, VW30
+Network 19 
+// T45
+LD     M2.1
+MOVW   VW32, VW34
+*I     +600, VW34
+Network 20 
+// T46
+LD     M2.1
+MOVW   VW36, VW38
+*I     +600, VW38
+Network 21 
+// T47
+LD     M2.1
+MOVW   VW78, VW60
+*I     +600, VW60
+Network 22 
+// T48
+LD     M2.1
+MOVW   VW80, VW62
+*I     +600, VW62
+Network 23 
+// T49
+LD     M2.1
+MOVW   VW82, VW64
+*I     +600, VW64
+Network 24 
+// T50
+LD     M2.1
+MOVW   VW84, VW66
+*I     +600, VW66
+Network 25 
+// BLOWER  (1)
+LD     M2.1
+AN     M3.1
+AN     M3.6
+AN     I0.1
+TON    T37, VW2
+Network 26 
+// BLOWER (1)
+LD     T37
+LPS
+AN     M3.2
+AN     M3.6
+=      M1.1
+LPP
+TON    T38, VW6
+Network 27 
+LD     T38
+LPS
+AN     I0.2
+=      M3.2
+LPP
+A      I0.2
+=      M3.6
+Network 28 
+// BLOWER (2)
+LD     M2.1
+LD     M3.2
+LD     I0.1
+AN     M3.7
+OLD
+ALD
+AN     I0.2
+TON    T39, VW10
+Network 29 
+// BLOWER (2)
+LD     T39
+LPS
+AN     M3.1
+=      M1.2
+LPP
+TON    T40, VW14
+Network 30 
+LD     T40
+LPS
+AN     I0.1
+=      M3.1
+LPP
+A      I0.1
+=      M3.7
+Network 31 
+// Slug pump
+LD     M2.1
+AN     M3.3
+TON    T41, VW18
+Network 32 
+// Slug pump
+LD     T41
+=      M1.3
+TON    T42, VW22
+Network 33 
+// Slug pump
+LD     T42
+=      M3.3
+Network 34 
+// Internal Circulation Pump
+LD     M2.1
+AN     M4.2
+TON    T47, VW60
+Network 35 
+// Internal Circulation Pump
+LD     T47
+=      M1.4
+TON    T48, VW62
+Network 36 
+// Internal Circulation Pump
+LD     T48
+=      M4.2
+Network 37 
+// MBBR
+LD     M2.1
+AN     M4.3
+TON    T49, VW64
+Network 38 
+// MBBR
+LD     T49
+=      M1.5
+TON    T50, VW66
+Network 39 
+// MBBR
+LD     T50
+=      M4.3
+Network 40 
+// Air Blower 1
+LD     M2.1
+AN     M3.4
+AN     M4.0
+AN     I0.6
+TON    T43, VW26
+Network 41 
+// Air Blower 1
+LD     T43
+LPS
+AN     M3.5
+=      M1.6
+LPP
+TON    T44, VW30
+Network 42 
+// Air Blower 1
+LD     T44
+LPS
+AN     I0.7
+=      M3.5
+LPP
+A      I0.7
+=      M4.0
+Network 43 
+// Air Blower 2
+LD     M2.1
+LD     M3.5
+LD     I0.6
+AN     M4.1
+OLD
+ALD
+AN     I0.7
+TON    T45, VW34
+Network 44 
+// Air Blower 2
+LD     T45
+LPS
+AN     M3.4
+=      M1.7
+LPP
+TON    T46, VW38
+Network 45 
+// Air Blower 2
+LD     T46
+LPS
+AN     I0.6
+=      M3.4
+LPP
+A      I0.6
+=      M4.1
+Network 46 
+// BLOWER 1
+LD     M2.2
+O      M1.1
+=      Q0.0
+Network 47 
+// BLOWER 2
+LD     M2.3
+O      M1.2
+=      Q0.1
+Network 48 
+// Õ„√…
+LD     M2.4
+O      M1.3
+AN     I0.3
+=      Q0.2
+Network 49 
+// ‘›«ÿ
+LD     M2.5
+O      M1.4
+AN     I0.4
+=      Q0.3
+Network 50 
+// MBBR
+LD     M2.6
+O      M1.5
+AN     I0.5
+=      Q0.4
+Network 51 
+// ‰«›Œ ÂÊ«¡ 1
+LD     M2.7
+O      M1.6
+=      Q0.5
+Network 52 
+// ‰«›Œ ÂÊ«¡ 2
+LD     M3.0
+O      M1.7
+=      Q0.6
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     M2.1
+MOVW   T37, VW40
+/I     +600, VW40
+Network 2 
+LD     M2.1
+MOVW   T38, VW42
+/I     +600, VW42
+Network 3 
+LD     M2.1
+MOVW   T39, VW44
+/I     +600, VW44
+Network 4 
+LD     M2.1
+MOVW   T40, VW46
+/I     +600, VW46
+Network 5 
+LD     M2.1
+MOVW   T41, VW48
+/I     +600, VW48
+Network 6 
+LD     M2.1
+MOVW   T42, VW50
+/I     +600, VW50
+Network 7 
+LD     M2.1
+MOVW   T43, VW52
+/I     +600, VW52
+Network 8 
+LD     M2.1
+MOVW   T44, VW54
+/I     +600, VW54
+Network 9 
+LD     M2.1
+MOVW   T45, VW56
+/I     +600, VW56
+Network 10 
+LD     M2.1
+MOVW   T46, VW58
+/I     +600, VW58
+Network 11 
+LD     M2.1
+MOVW   T47, VW70
+/I     +600, VW70
+Network 12 
+LD     M2.1
+MOVW   T48, VW72
+/I     +600, VW72
+Network 13 
+LD     M2.1
+MOVW   T49, VW74
+/I     +600, VW74
+Network 14 
+LD     M2.1
+MOVW   T50, VW78
+/I     +600, VW78
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK
