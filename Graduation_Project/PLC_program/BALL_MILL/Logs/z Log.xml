@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="z Log.xml" projectName="D:\Graduation_Project\PLC_program\Alarm_log\z.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Information" dateTime="1:22:33 AM">
+    <Message>Import finished: 3 discrete alarms; 0 analog alarms</Message>
+  </LogEntry>
+</LogFile>
